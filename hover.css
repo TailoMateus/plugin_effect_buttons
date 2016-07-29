@@ -8,6 +8,10 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.btn-square:hover{
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
 .btn-border-radius{
   margin: .4em;
   padding: 1em;
@@ -1389,6 +1393,90 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+/* Zoom Plus */
+
+.zoom-plus{
+  display: inline-block;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.zoom-plus:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Zoom Minus */
+
+.zoom-minus{
+  display: inline-block;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.zoom-minus:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/* Fold */
+
+.fold{
+  position: relative;
+  display: inline-block;
+  z-index: 9999;
+  -moz-transform: perspective(0px) rotateY(0deg);
+  -webkit-transform: perspective(0px) rotateY(0deg);
+  transform: perspective(0px) rotateY(0deg);
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.fold:hover{
+  -moz-transform: perspective(200px) rotateY(30deg);
+  -webkit-transform: perspective(200px) rotateY(30deg);
+  transform: perspective(200px) rotateY(30deg);
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+}
+
+/* Fold */
+
+.fold-invert{
+  position: relative;
+  display: inline-block;
+  z-index: 9999;
+  -moz-transform: perspective(0px) rotateY(0deg);
+  -webkit-transform: perspective(0px) rotateY(0deg);
+  transform: perspective(0px) rotateY(0deg);
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.fold-invert:hover{
+  -moz-transform: perspective(200px) rotateY(-30deg);
+  -webkit-transform: perspective(200px) rotateY(-30deg);
+  transform: perspective(200px) rotateY(-30deg);
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
 }
 
 /* BACKGROUND TRANSITIONS */
